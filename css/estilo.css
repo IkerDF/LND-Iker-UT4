@@ -1,0 +1,43 @@
+#body {
+  background-color: rgba(229, 235, 242, 255);
+}
+
+#navbar {
+  opacity: 0.9;
+}
+
+.nav-item {
+  font-size: 25px;
+}
+
+#eslogan {
+  display: flex;
+  align-items: center;
+}
+
+.slogan-container {
+  max-width: 400px;
+}
+
+.slogan-container h1 {
+  text-align: center;
+}
+
+#calendar {
+  max-width: 100%;
+}
+
+#calendar {
+  margin-top: 50px;
+  object-fit: cover;
+  height: 100vh;
+}
+
+#titulo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#cosascarrousel {
+  background-color: white;
+}
