@@ -21,11 +21,13 @@
 </head>
 
 <body id="body">
+
+  <!-- Barra de navegacion -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light" id="navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <a id="titulo"><img src="images/logo web.png" width="30" height="30"> Party Calendar</a>
+          <a id="titulo" href="#"><img src="images/logo web.png" width="30" height="30"> Party Calendar</a>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar">
@@ -45,20 +47,20 @@
                     <i class="fa-solid fa-comment-dots" id="comments"></i> Comments</button></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><button type="button" class="btn btn-outline-dark"
-                    onmouseover="changeIcon('plans', 'fa-solid fa-money-check-dollar fa-fade')"
-                    onmouseout="changeIcon('plans', 'fa-solid fa-money-check-dollar')">
-                    <i class="fa-solid fa-money-check-dollar" id="plans"></i> Plans</button></a>
+                <a class="nav-link" href="#servicios"><button type="button" class="btn btn-outline-dark"
+                    onmouseover="changeIcon('iconoServicios', 'fa-solid fa-hand-holding-medical fa-fade')"
+                    onmouseout="changeIcon('iconoServicios', 'fa-solid fa-hand-holding-medical')">
+                    <i class="fa-solid fa-hand-holding-medical" id="iconoServicios"></i> Servicios</button></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><button type="button" class="btn btn-outline-dark" id="support-button"
+                <a class="nav-link" href="#ayuda"><button type="button" class="btn btn-outline-dark" id="support-button"
                     onmouseover="changeIcon('support', 'fa-solid fa-circle-info fa-bounce')"
                     onmouseout="changeIcon('support', 'fa-solid fa-circle-info')">
-                    <i class="fa-solid fa-circle-info" id="support"></i> Support</button></a>
+                    <i class="fa-solid fa-circle-info" id="support"></i> Ayuda</button></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#"><button type="button" class="btn btn-outline-dark">
-                    <i class="fa-solid fa-download fa-bounce" id="download"></i> Download</button></a>
+                    <i class="fa-solid fa-download fa-bounce" id="download"></i> Descargar</button></a>
               </li>
             </ul>
           </div>
@@ -67,6 +69,8 @@
     </nav>
   </header>
 
+  <!-- Logo y eslogan de la aplicacion -->
+
   <section>
     <div class="container-fluid">
       <div class="row align-items-center justify-content-center">
@@ -74,6 +78,13 @@
           <div class="d-flex flex-column slogan-container">
             <h1>Tu aplicación para</h1>
             <h1>que no te pierdas ninguna fiesta</h1>
+
+            <button class="btn btn-md btn-dark android" id="descargaAndroid">
+              <a><i class="fa-brands fa-google-play"></i> Download</a>
+            </button>
+            <button class="btn btn-md btn-light iOS" id="descargaIOS">
+              <a><i class="fa-brands fa-apple"></i></i> Download</a>
+            </button>
           </div>
         </div>
         <div class="col-lg-9">
@@ -83,33 +94,105 @@
     </div>
   </section>
 
-  <section id="cosascarrousel">
-    <h1>hjsbfujhs</h1>
-    <h1>hjsbfujhs</h1>
-    <h1>hjsbfujhs</h1>
-    <h1>hjsbfujhs</h1>
+  <!-- Servicios de la aplicacion -->
+
+  <section id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <p>Estas son algunas de las cosas que ofrecemos</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-md-4 col-sm-12 mx-auto">
+          <div class="card">
+            <div class="card-header">
+              <h5>Transporte</h5>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Creamos posibles trayectos hasta el evento y te asesoramos sobre que transporte es el
+                mejor.</p>
+              <a onclick="initMap()" class="btn btn-outline-dark">Probar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-12 mx-auto">
+          <div class="card">
+            <div class="card-header">
+              <h5>Recordatorios</h5>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Te recordamos los eventos proximos para que no se te olvide ninguno.</p>
+              <button type="button" class="btn btn-outline-dark" id="liveToastBtn"
+                onclick="mostrarToast()"><strong>Probar</strong></button>
+
+              <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                    <img src="images/resize.jpg" class="rounded me-2">
+                    <strong class="me-auto">Party Calendar</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                  <div class="toast-body">
+                    Dentro de poco hay un evento, comprueba la aplicación para más información.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-12 mx-auto">
+          <div class="card">
+            <div class="card-header"><h5>Entradas</h5></div>
+            <div class="card-body">
+              <p class="card-text">Te ayudamos y recomendamos en cuanto a la compra de entradas para el evento.</p>
+                <a href="https://www.ticketmaster.es/" target="_blank" class="btn btn-outline-dark">Probar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-12 mx-auto">
+          <div class="card">
+            <div class="card-header"><h5>Restaurantes</h5></div>
+            <div class="card-body">
+              <p class="card-text">Te mostramos los sitios cercanos al evento donde poder comer.</p>
+                <a onclick="initRestaurantes()" class="btn btn-outline-dark">Probar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-12 mx-auto">
+          <div class="card">
+            <div class="card-header">Económico</div>
+            <div class="card-body">
+              <h5 class="card-title">Augue sit</h5>
+              <p class="card-text">10€/mes</p>
+              <label class="card-text">Morbi sed nunc tortor</p>
+                <a href="#" class="btn btn-outline-dark">La quiero</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer class="text-center bg-light">
-    <div class="container p-4">
-      <section class="mb-4">
-        <a class="btn btn-outline-dark btn-floating m-1" href="https://es-es.facebook.com/" target="_blank"
-          role="button"><i class="fab fa-facebook-f"></i></a>
+  <!-- Pie de pagina -->
 
-        <a class="btn btn-outline-dark btn-floating m-1" href="https://twitter.com/?lang=es" target="_blank"
-          role="button"><i class="fab fa-twitter"></i></a>
+  <section id="ayuda">
+    <footer class="text-center bg-light">
+      <div class="container p-4">
+        <section class="mb-4">
+          <a class="btn btn-outline-dark btn-floating m-1" href="https://es-es.facebook.com/" target="_blank"
+            role="button"><i class="fab fa-facebook-f"></i></a>
 
-        <a class="btn btn-outline-dark btn-floating m-1" href="mailto:ikerdiazfalcon@alumno.ieselrincon.es"
-          target="_blank" role="button"><i class="fab fa-google"></i></a>
+          <a class="btn btn-outline-dark btn-floating m-1" href="https://twitter.com/?lang=es" target="_blank"
+            role="button"><i class="fab fa-twitter"></i></a>
 
-        <a class="btn btn-outline-dark btn-floating m-1" href="https://www.instagram.com/" target="_blank"
-          role="button"><i class="fab fa-instagram"></i></a>
+          <a class="btn btn-outline-dark btn-floating m-1" href="mailto:ikerdiazfalcon@alumno.ieselrincon.es"
+            target="_blank" role="button"><i class="fab fa-google"></i></a>
 
-        <a class="btn btn-outline-dark btn-floating m-1" href="https://github.com/IkerDF/LND-Iker-UT4" target="_blank"
-          role="button"><i class="fab fa-github"></i></a>
-      </section>
+          <a class="btn btn-outline-dark btn-floating m-1" href="https://www.instagram.com/" target="_blank"
+            role="button"><i class="fab fa-instagram"></i></a>
 
-      <section class="">
+          <a class="btn btn-outline-dark btn-floating m-1" href="https://github.com/IkerDF/LND-Iker-UT4" target="_blank"
+            role="button"><i class="fab fa-github"></i></a>
+        </section>
+
         <form action="">
           <div class="row d-flex justify-content-center">
             <div class="col-auto">
@@ -121,25 +204,42 @@
             <div class="col-md-5 col-12">
               <div class="form-outline form-white mb-4">
                 <input type="email" id="form5Example21" class="form-control" placeholder="Ej.: tucorreo@gmail.com" />
-                <label class="form-label" for="form5Example21">Correo Electrónico</label>
               </div>
             </div>
 
             <div class="col-auto">
-              <button type="submit" class="btn btn-outline-dark mb-4">
+              <button type="button" class="btn btn-outline-dark mb-4" data-bs-toggle="modal" data-bs-target="#modal">
                 Contáctanos
               </button>
+
+              <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modal" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Correo Recibido</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Le hemos enviado un correo con más información sobre nuestra aplicación.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </form>
-      </section>
-    </div>
+      </div>
 
-    <div class="text-center p-3">
-      © 2023 Copyright:
-      <a href="https://github.com/IkerDF/LND-Iker-UT4">Party Calendar</a>
-    </div>
-  </footer>
+      <div class="text-center p-3">
+        © 2023 Copyright:
+        <a href="https://github.com/IkerDF/LND-Iker-UT4" id="copyright">Party Calendar</a>
+      </div>
+    </footer>
+
+  </section>
 
 </body>
 
