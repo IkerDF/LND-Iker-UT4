@@ -1,24 +1,3 @@
-function cambiarColor() {
-    const navbar = document.getElementById("navbar");
-    const color = document.querySelector(".light");
-
-    if (document.body.className === "light") {
-        navbar.classList.remove("bg-light");
-        navbar.classList.remove("navbar-light");
-        navbar.classList.add("navbar-dark");
-        navbar.classList.add("bg-dark");
-
-        document.body.className = "dark";
-    } else {
-        navbar.classList.remove("bg-dark");
-        navbar.classList.remove("navbar-dark");
-        navbar.classList.add("navbar-light");
-        navbar.classList.add("bg-light");
-
-        document.body.className = "light";
-    }
-}
-
 //Funcion para cambiar los iconos cuando esta el raton encima o cuando deja de estarlo
 
 function changeIcon(x, y) {
@@ -61,9 +40,9 @@ function mostrarToast() {
     }
 }
 
-//Funcion para mostrar un mapa con los restaurantes cercanos
+//Funcion para mostrar un mapa con la opcion que se elija de google maps
 
-function initRestaurantes() {
+function mostrarMapa(x) {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function (position) {
             var pos = {
@@ -71,8 +50,8 @@ function initRestaurantes() {
                 lng: position.coords.longitude
             };
 
-            var url = 'https://www.google.es/maps/search/Restaurantes/'+ pos.lat + ',' + pos.lng;
-            
+            var url = 'https://www.google.es/maps/search/' + x + '/' + pos.lat + ',' + pos.lng;
+
             window.open(url);
         }, function () {
             alert('No se pudo obtener la ubicación del usuario.');
@@ -81,3 +60,33 @@ function initRestaurantes() {
         alert('El navegador no admite la geolocalización.');
     }
 }
+
+document.addEventListener('keydown', function (event) {
+    const carouselId = '#carousel';
+    const carousel = document.querySelector(carouselId);
+    const interval = parseInt(carousel.getAttribute('data-bs-interval'));
+
+    if (event.code === 'ArrowLeft') {
+        event.preventDefault();
+        const prevButton = carousel.querySelector(`${carouselId} .carousel-control-prev`);
+        prevButton.click();
+    }
+    else if (event.code === 'ArrowRight') {
+        event.preventDefault();
+        const nextButton = carousel.querySelector(`${carouselId} .carousel-control-next`);
+        nextButton.click();
+    }
+});
+
+var carouseltestimonios = new bootstrap.Carousel(carousel, {
+    interval: 10000,
+    pause: 'hover'
+});
+
+myCarousel.addEventListener('mouseenter', function () {
+    carousel.pause();
+});
+
+myCarousel.addEventListener('mouseleave', function () {
+    carousel.cycle();
+});

@@ -41,10 +41,10 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#cosascarrousel"><button type="button" class="btn btn-outline-dark"
+                <a class="nav-link" href="#reviews"><button type="button" class="btn btn-outline-dark"
                     onmouseover="changeIcon('comments', 'fa-solid fa-comment-dots fa-beat')"
                     onmouseout="changeIcon('comments', 'fa-solid fa-comment-dots')">
-                    <i class="fa-solid fa-comment-dots" id="comments"></i> Comments</button></a>
+                    <i class="fa-solid fa-comment-dots" id="comments"></i> Reseñas</button></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#servicios"><button type="button" class="btn btn-outline-dark"
@@ -140,31 +140,97 @@
         </div>
         <div class="col-lg-2 col-md-4 col-sm-12 mx-auto">
           <div class="card">
-            <div class="card-header"><h5>Entradas</h5></div>
+            <div class="card-header">
+              <h5>Entradas</h5>
+            </div>
             <div class="card-body">
               <p class="card-text">Te ayudamos y recomendamos en cuanto a la compra de entradas para el evento.</p>
-                <a href="https://www.ticketmaster.es/" target="_blank" class="btn btn-outline-dark">Probar</a>
+              <a href="https://www.ticketmaster.es/" target="_blank" class="btn btn-outline-dark">Probar</a>
             </div>
           </div>
         </div>
         <div class="col-lg-2 col-md-4 col-sm-12 mx-auto">
           <div class="card">
-            <div class="card-header"><h5>Restaurantes</h5></div>
+            <div class="card-header">
+              <h5>Restaurantes</h5>
+            </div>
             <div class="card-body">
               <p class="card-text">Te mostramos los sitios cercanos al evento donde poder comer.</p>
-                <a onclick="initRestaurantes()" class="btn btn-outline-dark">Probar</a>
+              <a onclick="mostrarMapa('Restaurantes')" class="btn btn-outline-dark">Probar</a>
             </div>
           </div>
         </div>
         <div class="col-lg-2 col-md-4 col-sm-12 mx-auto">
           <div class="card">
-            <div class="card-header">Económico</div>
-            <div class="card-body">
-              <h5 class="card-title">Augue sit</h5>
-              <p class="card-text">10€/mes</p>
-              <label class="card-text">Morbi sed nunc tortor</p>
-                <a href="#" class="btn btn-outline-dark">La quiero</a>
+            <div class="card-header">
+              <h5>Alojamiento</h5>
             </div>
+            <div class="card-body">
+              <p class="card-text">Te mostramos los diferentes hoteles donde poder alojarte durante el evento.</p>
+              <a onclick="mostrarMapa('Hoteles')" class="btn btn-outline-dark">Probar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-12 mx-auto">
+          <div class="card">
+            <div class="card-header">
+              <h5>Qué hacer</h5>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Te mostramos algunas actividades para hacer antes o después del evento.</p>
+              <a onclick="mostrarMapa('Qué+hacer')" class="btn btn-outline-dark">Probar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reseñas -->
+  
+  <section id="reviews">
+    <h1>Reseñas</h1>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div id="carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/carrousel1.png" class="img-fluid mx-auto">
+                <h5>Antonio Pérez</h5>
+                <p>Una aplicación muy útil y fácil de usar</p>
+              </div>
+              <div class="carousel-item">
+                <img src="images/carrousel2.png" class="img-fluid mx-auto">
+                <h5>Miriam Almeida</h5>
+                <p>A mis amigos y a mi nos ha facilitado ir a eventos</p>
+              </div>
+              <div class="carousel-item">
+                <img src="images/carrousel3.png" class="img-fluid mx-auto">
+                <h5>Carlos Ruiz</h5>
+                <p>Muy intuitiva y con muy buenas funciones</p>
+              </div>
+              <div class="carousel-item">
+                <img src="images/carrousel4.png" class="img-fluid mx-auto">
+                <h5>Rosario Mendoza</h5>
+                <p>Funciona muy bien y es de gran ayuda</p>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>
