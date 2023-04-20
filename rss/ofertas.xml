@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Ofertas</title>
+    <link>https://ikerdf.github.io/LND-Iker-UT4/</link>
+    <description>Ofertas de Party Calendar</description>
+
+    <image>
+      <url>https://cdn.dribbble.com/users/10867821/screenshots/17997339/events_calendar_4x.jpg</url>
+      <title>Imagen del canal de noticias</title>
+      <link>https://cdn.dribbble.com/users/10867821/screenshots/17997339/events_calendar_4x.jpg</link>
+    </image>
+
+    <category>Ofertas en la aplicacion</category>
+    <category>Descuentos</category>
+
+    <item>
+      <title>Descubre nuestras nuevas funciones para la planificación de eventos</title>
+      <description>La primavera ha llegado y queremos celebrarlo contigo. Por eso, hemos lanzado descuentos de hasta el 50% en nuestra tienda en línea. ¡Aprovecha la oferta y consigue tus productos favoritos a precios increíbles!</description>
+      <pubDate>20 de abril de 2023</pubDate>
+      <image>
+        <url>https://i.blogs.es/e2a292/google-calendar/450_1000.jpg</url>
+        <title>Imagen de nuevas funciones</title>
+        <link>https://i.blogs.es/e2a292/google-calendar/450_1000.jpg</link>
+    </image>
+    </item>
+
+    <item>
+      <title>¡Ahorra en tu próxima escapada! Ofertas de última hora en paquetes de vacaciones</title>
+      <description>¿Quieres tomarte un descanso y no gastar demasiado? ¡Tenemos la solución perfecta! En nuestra agencia de viajes, hemos lanzado ofertas de última hora en paquetes de vacaciones. ¡Aprovecha y reserva ahora para ahorrar en tu próxima escapada!</description>
+      <pubDate>22 de abril de 2023</pubDate>
+      <image>
+        <url>https://as01.epimg.net/betech/imagenes/2018/02/12/portada/1518462255_385624_1518468090_noticia_normal_recorte1.jpg</url>
+        <title>Imagen del ítem 2 del canal de noticias</title>
+        <link>https://as01.epimg.net/betech/imagenes/2018/02/12/portada/1518462255_385624_1518468090_noticia_normal_recorte1.jpg</link>
+      </image>
+    </item>
+
+    <item>
+      <title>¡Gana una experiencia única! Oferta especial en viajes de aventura</title>
+      <description>¿Te encantaría vivir una experiencia única e inolvidable? ¡Tenemos la oferta perfecta para ti! En nuestra agencia de viajes, hemos lanzado una oferta especial en viajes de aventura. Reserva ahora y participa en un sorteo para ganar una experiencia única. ¡No te lo pierdas!</description>
+      <pubDate>15 de mayo de 2023</pubDate>
+      <image>
+        <url>https://cdn.ipadizate.com/2021/07/Dawn-%E2%80%93-Minimal-Calendar-app.jpg?width=1200</url>
+        <title>Imagen del ítem 3 del canal de noticias</title>
+        <link>https://cdn.ipadizate.com/2021/07/Dawn-%E2%80%93-Minimal-Calendar-app.jpg?width=1200</link>
+      </image>
+    </item>
+
+  </channel>
+  </rss>
