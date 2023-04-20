@@ -98,3 +98,19 @@
 #reviews h5 {
   margin-top: 10px;
 }
+
+#rsssection {
+  padding-top: 100px;
+  padding-bottom: 70px;
+
+  text-align: center;
+}
+
+#rsssection h1{
+  font-weight: bold;
+}
+
+#rsssection h5{
+  margin-top: 20px;
+}
+
