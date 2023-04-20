@@ -80,9 +80,91 @@
         </nav>
     </header>
 
+
     <section id="rsssection">
         <h1>Canales RSS</h1>
-        
-      </section>
+        <p>Puedes suscribirte a nuestros distintos canales RSS</p>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-3">
+                    <h5>Noticias</h5>
+                    <a href="rss/noticias.xml"><img src="images/pic_rss.gif"> Noticias</a>
+                </div>
+                <div class="col-3">
+                    <h5>Ofertas</h5>
+                    <a href="rss/ofertas.xml"><img src="images/pic_rss.gif"> Ofertas</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="ayuda">
+        <footer class="text-center bg-light fixed-bottom">
+          <div class="container p-4">
+            <section class="mb-4">
+              <a class="btn btn-outline-dark btn-floating m-1" href="https://es-es.facebook.com/" target="_blank"
+                role="button"><i class="fab fa-facebook-f"></i></a>
+    
+              <a class="btn btn-outline-dark btn-floating m-1" href="https://twitter.com/?lang=es" target="_blank"
+                role="button"><i class="fab fa-twitter"></i></a>
+    
+              <a class="btn btn-outline-dark btn-floating m-1" href="mailto:ikerdiazfalcon@alumno.ieselrincon.es"
+                target="_blank" role="button"><i class="fab fa-google"></i></a>
+    
+              <a class="btn btn-outline-dark btn-floating m-1" href="https://www.instagram.com/" target="_blank"
+                role="button"><i class="fab fa-instagram"></i></a>
+    
+              <a class="btn btn-outline-dark btn-floating m-1" href="https://github.com/IkerDF/LND-Iker-UT4" target="_blank"
+                role="button"><i class="fab fa-github"></i></a>
+            </section>
+    
+            <form action="">
+              <div class="row d-flex justify-content-center">
+                <div class="col-auto">
+                  <p class="pt-2">
+                    <strong>Escríbenos para más información</strong>
+                  </p>
+                </div>
+    
+                <div class="col-md-5 col-12">
+                  <div class="form-outline form-white mb-4">
+                    <input type="email" id="form5Example21" class="form-control" placeholder="Ej.: tucorreo@gmail.com" />
+                  </div>
+                </div>
+    
+                <div class="col-auto">
+                  <button type="button" class="btn btn-outline-dark mb-4" data-bs-toggle="modal" data-bs-target="#modal">
+                    Contáctanos
+                  </button>
+    
+                  <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modal" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Correo Recibido</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Le hemos enviado un correo con más información sobre nuestra aplicación.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+    
+          <div class="text-center p-3">
+            © 2023 Copyright:
+            <a href="https://github.com/IkerDF/LND-Iker-UT4" id="copyright">Party Calendar</a>
+          </div>
+        </footer>
+    </section>
 </body>
 </html>
